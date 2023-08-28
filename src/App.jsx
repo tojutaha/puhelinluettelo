@@ -82,7 +82,6 @@ const App = () => {
           <li key={person.name}>{person.name} {person.number}</li>
         ))}
       </ul>
-      <div>debug: {newName}</div>
     </div>
   )
 
