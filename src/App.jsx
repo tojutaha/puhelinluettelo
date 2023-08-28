@@ -27,6 +27,7 @@ const App = () => {
       setPersons(persons.concat(newEntry))
       setNewName('')
       setNewNumber('')
+      setOriginalPersons(originalPersons.concat(newEntry))
     }
   }
 
@@ -39,6 +40,7 @@ const App = () => {
   }
 
   const handleFilterChange = (event) => {
+    event.preventDefault()
     const inputValue = event.target.value.toLowerCase()
     if (inputValue.length === 0) {
       setPersons(originalPersons)
