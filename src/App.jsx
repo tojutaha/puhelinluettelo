@@ -14,7 +14,7 @@ const App = () => {
   const hook = () => {
     axios
     //.get("http://localhost:3001/persons")
-    .get("/persons")
+    .get("https://raw.githubusercontent.com/tojutaha/puhelinluettelo/main/db.json")
     .then(response => {
       setPersons(response.data)
     })
